@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  </head>
+  <body>
+    <!-- <nav>
+      <div class="part1">
+        <img style="height: 40px; width: 270px;" src="https://s3-alpha-sig.figma.com/img/a2a9/c5c8/36a62b0432a5174a528284a3088fa102?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aDCFHIkxSr8vTmcKM-2kGkgu5iTmKNqgHirZ2ybL58qezzRMu4TbU~4g-RZZmu-Pqr~ALFevbtvK~iW5h200vgqIuseojcBtO06ebGw1MwGNqxtmMgYxESmx3sGRVs77D4ABhXS3cvLu6uxjsUEjdHVP9-hhDoDbRRgdLJekJ3J4yNeI5KqFBYNjpImZxYuQf-oL5fDQbB4DHN6y2Pj4ArOSG867qqapwKYpvuIXNfymwzyIBWCStNwtyRlYCBC3rz6z4EdU-Ingh~zjrXg2MMFrhMlY74RwePnBsLs-f6uSW~PUd4PNV585u-QmDf8HhlMp-OdzoB6VjdJGxMB5gw__" alt="">
+
+        <div id="searchbar">
+          <input type="text" placeholder="What Are you searching for?" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.28125 0C4.16367 0 0 4.16367 0 9.28125C0 14.3988 4.16367 18.5625 9.28125 18.5625C11.4104 18.5625 13.3682 17.8341 14.936 16.6239L21.6814 23.3693C22.1476 23.8354 22.9032 23.8354 23.3693 23.3693C23.8354 22.9032 23.8354 22.1476 23.3693 21.6814L16.6239 14.936C17.8341 13.3682 18.5625 11.4104 18.5625 9.28125C18.5625 4.16367 14.3988 0 9.28125 0ZM9.28125 2.0625C13.2614 2.0625 16.5 5.30114 16.5 9.28125C16.5 13.2614 13.2614 16.5 9.28125 16.5C5.30114 16.5 2.0625 13.2614 2.0625 9.28125C2.0625 5.30114 5.30114 2.0625 9.28125 2.0625Z"
+              fill="#0070E1"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="part2">
+        <ul>
+          <li><a href="#">Buy Vehicles</a></li>
+          <li><a href="#">Sell Vehicles</a></li>
+          <li><a href="#">Exchange Vehicles</a></li>
+        </ul>
+      </div>
+      <div class="part3">
+        <span>+91 073048 67002</span>
+        <img
+          src="https://www.kindpng.com/picc/m/19-195256_whatsapp-icon-whatsapp-logo-jpg-download-hd-png.png"
+          alt=""
+        />
+      </div>
+    </nav> -->
+
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <img style="height: 40px; width: 270px;" src="https://s3-alpha-sig.figma.com/img/a2a9/c5c8/36a62b0432a5174a528284a3088fa102?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aDCFHIkxSr8vTmcKM-2kGkgu5iTmKNqgHirZ2ybL58qezzRMu4TbU~4g-RZZmu-Pqr~ALFevbtvK~iW5h200vgqIuseojcBtO06ebGw1MwGNqxtmMgYxESmx3sGRVs77D4ABhXS3cvLu6uxjsUEjdHVP9-hhDoDbRRgdLJekJ3J4yNeI5KqFBYNjpImZxYuQf-oL5fDQbB4DHN6y2Pj4ArOSG867qqapwKYpvuIXNfymwzyIBWCStNwtyRlYCBC3rz6z4EdU-Ingh~zjrXg2MMFrhMlY74RwePnBsLs-f6uSW~PUd4PNV585u-QmDf8HhlMp-OdzoB6VjdJGxMB5gw__" alt="">
+        <div id="searchbar">
+          <input type="text"class="form-control" placeholder="What Are you searching for?" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.28125 0C4.16367 0 0 4.16367 0 9.28125C0 14.3988 4.16367 18.5625 9.28125 18.5625C11.4104 18.5625 13.3682 17.8341 14.936 16.6239L21.6814 23.3693C22.1476 23.8354 22.9032 23.8354 23.3693 23.3693C23.8354 22.9032 23.8354 22.1476 23.3693 21.6814L16.6239 14.936C17.8341 13.3682 18.5625 11.4104 18.5625 9.28125C18.5625 4.16367 14.3988 0 9.28125 0ZM9.28125 2.0625C13.2614 2.0625 16.5 5.30114 16.5 9.28125C16.5 13.2614 13.2614 16.5 9.28125 16.5C5.30114 16.5 2.0625 13.2614 2.0625 9.28125C2.0625 5.30114 5.30114 2.0625 9.28125 2.0625Z"
+              fill="#0070E1"
+            />
+          </svg>
+        </div>
+        <button type="button" class="navbar-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" class="detached">
+          <ul class="navbar-links">
+            <li class="navbar-item"><nobr><a class="navbar-link" href="/buyVehicle.html">Buy Vehicle</a></nobr></li>
+            <li class="navbar-item"><nobr><a class="navbar-link" href="/about">Sell Vehicle</a></nobr></li>
+            <li class="navbar-item"><nobr><a class="navbar-link" href="/about">Exchange Vehicle</a></nobr></li>
+           
+            
+          </ul>
+        </div>
+        <div class="part3">
+          <nobr>+91 073048 67002
+          <img
+            src="https://www.kindpng.com/picc/m/19-195256_whatsapp-icon-whatsapp-logo-jpg-download-hd-png.png"
+            alt=""
+          /></nobr>
+        </div>
+      </nav>
+  </header>
+    <!-- body -->
+    <div class="main-body  container">
+    <div class="row">
+       <div class="filters col-md-2 col-sm-4 col-xs-6 px-0 gap-3 ">
+      
+        <div class="price-range">
+          <h5>Price Range ^</h5>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Rs 25,000 - 50,000</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Rs 50,000 - 75,000</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Rs 75,000 - 1,00,000</span>
+            </label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Above 1,00,000</span>
+            </label>
+        </div>
+        
+        </div>
+        <hr>
+        <div class="brand">
+          <h5>Brand ^</h5>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Aprilia</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">bajaj</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Hero</span>
+            </label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Honda</span>
+            </label>
+        </div>
+        <hr>
+        </div>
+        <div class="Make-year">
+          <h5>Make year</h5>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">2022</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">2021</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">2020</span>
+            </label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">2019</span>
+            </label>
+        </div>
+        <hr>
+        </div>
+        <div class="Ownership">
+          <h5>Ownership</h5>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">First Owner</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Second Owner</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Third Owner</span>
+            </label>
+        </div>
+        
+        </div>
+
+        <hr>
+        <div class="Store Location">
+          <h5>Store Location</h5>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Airoli</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Kamothe</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Jogeshwari</span>
+            </label>
+        </div>
+        </div>
+        <hr>
+        <div class="Style-type">
+          <h5>Style Type</h5>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Scooter</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Commuter</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="checkbox-label">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Sports</span>
+            </label>
+        </div>
+       
+        
+        </div>
+
+
+     
+    </div>
+
+      <div class="listing col-md-10  col-sm-8 col-xs-6 ">
+        <div class="banner width-md-10">
+          <div class="scooty">
+            <h1>
+              <span> Exchange</span> <br />
+              <p>your old vehicle?</p>
+
+              <button>Exchange Now</button>
+            </h1>
+
+            <img
+              src="https://s3-alpha-sig.figma.com/img/d47a/0478/26da580b22128ef713e445b7e3b04671?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T4B5~~s8jG4CopHhyY6GABYXFd49KwKyiW~4D5OPveHhW1Uz5b8S4TVjKnZ-3IKFELeDnslo~XuqOK9vqalC4O-zGccNlNEpqZtc5zweCuKZjo3e6hQukkPYQHVmhUy6pnHs8emukrfb2cxQIBVQOzZ3up-nCJmxG3v62q2YHQG9X-w2~AknsHq1XBvTRzEzFAo402eJ6oiHV9s9ypWs-~yaUD~j0eurAGxh0mn4TXgOZZcdxqYf~ayWU~kgkdSG~SXDrbv2ETeqxFetFOyLHseOacdofyIegiKSOdJcNEeUGGi5GOgBQDi5qq~ONyQwFyTe-~CHtjdSH6eaxEcV7w__"
+              alt=""
+            />
+          </div>
+        </div>
+
+          <div class="sort" style="text-align: end; height: 30px;  white-space: nowrap; padding-right: 10px;">
+            Sort: by Popular ^
+          </div>
+ 
+      
+            
+            <div class="bike-list ">
+
+            <div class="row">             
+              <!-- First bike -->
+              <div class="card col-md-4  col-sm-6 col-xs-12" >
+                <img
+                  class="card-img-top"
+                  src="https://s3-alpha-sig.figma.com/img/1958/4ce4/bb6f0b198cd6b1e879115c8b313f88de?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wmm6l9L32ySqa1jKq3kgNbpHdZ6ytPD-d1~sZ0Eedj3rNDDra9uwBswgNtUVNxEqWGAVke8guq7Jnr2Ov37PBY~BswHPNIbJJ2MYI0wiC9uPzOxdEnIE4SSLrbKcr8dJ4LrHmUgCOjSDFairSV00hO59Eb6FC-2~o8a0yL0~~5lxnDkh5e7AcyZ8ijTAlel0aWwo~Gf31GpZEpFbA22YjHpsSg2SHOff6dSN4EA2vhZCDQZ7rchO6qZrkAq~GOYACknuXI9qxjEKazpuEsKeZSeD8-6xGuUhITfVD36V1WyoAkILbDGhM4NXu64yUSGdmWVXp3yV53z1UnoqN5w5Xg__"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bajaj Pulsar ABS 220F 2019</h5> 
+                  <ul >
+                    <li>2016 Model</li>
+                    <li>26,000 KM</li>
+                    <li>Insured</li>
+                    <li>First Owner</li>
+                  </ul> 
+                  <p>
+                    <h1>Rs 40,000</h1>
+                  </p>
+                  <p>EMI at 2,800/- Mo</p>
+                </div>
+              
+              </div> 
+
+           <!-- Second bike -->
+           <div class="card col-md-4 col-sm-6 col-xs-12" >
+            <img
+              class="card-img-top"
+              src="https://s3-alpha-sig.figma.com/img/1958/4ce4/bb6f0b198cd6b1e879115c8b313f88de?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wmm6l9L32ySqa1jKq3kgNbpHdZ6ytPD-d1~sZ0Eedj3rNDDra9uwBswgNtUVNxEqWGAVke8guq7Jnr2Ov37PBY~BswHPNIbJJ2MYI0wiC9uPzOxdEnIE4SSLrbKcr8dJ4LrHmUgCOjSDFairSV00hO59Eb6FC-2~o8a0yL0~~5lxnDkh5e7AcyZ8ijTAlel0aWwo~Gf31GpZEpFbA22YjHpsSg2SHOff6dSN4EA2vhZCDQZ7rchO6qZrkAq~GOYACknuXI9qxjEKazpuEsKeZSeD8-6xGuUhITfVD36V1WyoAkILbDGhM4NXu64yUSGdmWVXp3yV53z1UnoqN5w5Xg__"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bajaj Pulsar ABS 220F 2019</h5> 
+              <ul >
+                <li>2016 Model</li>
+                <li>26,000 KM</li>
+                <li>Insured</li>
+                <li>First Owner</li>
+              </ul> 
+              <p>
+                <h1>Rs 40,000</h1>
+              </p>
+              <p>EMI at 2,800/- Mo</p>
+            </div>
+           
+           </div>
+
+
+           <!-- Third bike -->
+             <div class="card col-md-4 col-sm-6 col-xs-12" >
+  <img
+    class="card-img-top"
+    src="https://s3-alpha-sig.figma.com/img/1958/4ce4/bb6f0b198cd6b1e879115c8b313f88de?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wmm6l9L32ySqa1jKq3kgNbpHdZ6ytPD-d1~sZ0Eedj3rNDDra9uwBswgNtUVNxEqWGAVke8guq7Jnr2Ov37PBY~BswHPNIbJJ2MYI0wiC9uPzOxdEnIE4SSLrbKcr8dJ4LrHmUgCOjSDFairSV00hO59Eb6FC-2~o8a0yL0~~5lxnDkh5e7AcyZ8ijTAlel0aWwo~Gf31GpZEpFbA22YjHpsSg2SHOff6dSN4EA2vhZCDQZ7rchO6qZrkAq~GOYACknuXI9qxjEKazpuEsKeZSeD8-6xGuUhITfVD36V1WyoAkILbDGhM4NXu64yUSGdmWVXp3yV53z1UnoqN5w5Xg__"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Bajaj Pulsar ABS 220F 2019</h5> 
+    <ul >
+      <li>2016 Model</li>
+      <li>26,000 KM</li>
+      <li>Insured</li>
+      <li>First Owner</li>
+    </ul> 
+    <p>
+      <h1>Rs 40,000</h1>
+    </p>
+    <p>EMI at 2,800/- Mo</p>
+  </div>
+ 
+           </div>
+
+          </div> 
+
+          <div class="row">
+            <!-- fourth bike -->
+            <div class="card col-md-4 col-sm-6 col-xs-12" >
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/1958/4ce4/bb6f0b198cd6b1e879115c8b313f88de?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wmm6l9L32ySqa1jKq3kgNbpHdZ6ytPD-d1~sZ0Eedj3rNDDra9uwBswgNtUVNxEqWGAVke8guq7Jnr2Ov37PBY~BswHPNIbJJ2MYI0wiC9uPzOxdEnIE4SSLrbKcr8dJ4LrHmUgCOjSDFairSV00hO59Eb6FC-2~o8a0yL0~~5lxnDkh5e7AcyZ8ijTAlel0aWwo~Gf31GpZEpFbA22YjHpsSg2SHOff6dSN4EA2vhZCDQZ7rchO6qZrkAq~GOYACknuXI9qxjEKazpuEsKeZSeD8-6xGuUhITfVD36V1WyoAkILbDGhM4NXu64yUSGdmWVXp3yV53z1UnoqN5w5Xg__"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bajaj Pulsar ABS 220F 2019</h5> 
+                <ul >
+                  <li>2016 Model</li>
+                  <li>26,000 KM</li>
+                  <li>Insured</li>
+                  <li>First Owner</li>
+                </ul> 
+                <p>
+                  <h1>Rs 40,000</h1>
+                </p>
+                <p>EMI at 2,800/- Mo</p>
+              </div>
+            
+            </div>
+            <!-- fifth bike -->
+            <div class="card col-md-4 col-sm-6 col-xs-12" >
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/1958/4ce4/bb6f0b198cd6b1e879115c8b313f88de?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wmm6l9L32ySqa1jKq3kgNbpHdZ6ytPD-d1~sZ0Eedj3rNDDra9uwBswgNtUVNxEqWGAVke8guq7Jnr2Ov37PBY~BswHPNIbJJ2MYI0wiC9uPzOxdEnIE4SSLrbKcr8dJ4LrHmUgCOjSDFairSV00hO59Eb6FC-2~o8a0yL0~~5lxnDkh5e7AcyZ8ijTAlel0aWwo~Gf31GpZEpFbA22YjHpsSg2SHOff6dSN4EA2vhZCDQZ7rchO6qZrkAq~GOYACknuXI9qxjEKazpuEsKeZSeD8-6xGuUhITfVD36V1WyoAkILbDGhM4NXu64yUSGdmWVXp3yV53z1UnoqN5w5Xg__"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bajaj Pulsar ABS 220F 2019</h5> 
+                <ul >
+                  <li>2016 Model</li>
+                  <li>26,000 KM</li>
+                  <li>Insured</li>
+                  <li>First Owner</li>
+                </ul> 
+                <p>
+                  <h1>Rs 40,000</h1>
+                </p>
+                <p>EMI at 2,800/- Mo</p>
+              </div>
+            
+            </div>
+            <!-- sixth bike -->
+            <div class="card col-md-4 col-sm-6 col-xs-12" >
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/1958/4ce4/bb6f0b198cd6b1e879115c8b313f88de?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wmm6l9L32ySqa1jKq3kgNbpHdZ6ytPD-d1~sZ0Eedj3rNDDra9uwBswgNtUVNxEqWGAVke8guq7Jnr2Ov37PBY~BswHPNIbJJ2MYI0wiC9uPzOxdEnIE4SSLrbKcr8dJ4LrHmUgCOjSDFairSV00hO59Eb6FC-2~o8a0yL0~~5lxnDkh5e7AcyZ8ijTAlel0aWwo~Gf31GpZEpFbA22YjHpsSg2SHOff6dSN4EA2vhZCDQZ7rchO6qZrkAq~GOYACknuXI9qxjEKazpuEsKeZSeD8-6xGuUhITfVD36V1WyoAkILbDGhM4NXu64yUSGdmWVXp3yV53z1UnoqN5w5Xg__"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bajaj Pulsar ABS 220F 2019</h5> 
+                <ul >
+                  <li>2016 Model</li>
+                  <li>26,000 KM</li>
+                  <li>Insured</li>
+                  <li>First Owner</li>
+                </ul> 
+                <p>
+                  <h1>Rs 40,000</h1>
+                </p>
+                <p>EMI at 2,800/- Mo</p>
+              </div>
+            
+            </div>
+
+          </div></div>
+        
+      </div>
+    </div>
+    </div>
+
+
+
+     <!-- Footer -->
+     <footer class="footer" style="width: 100vw !important" >
+      <div class="container"> <!-- Use container-fluid instead of container to make the footer full width -->
+          <div class="row">                       
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="single_footer">
+                      <h4>Services</h4>
+                      <ul>
+                          <li><a href="#">Lorem Ipsum</a></li>
+                          <li><a href="#">Simply dummy text</a></li>
+                          <li><a href="#">The printing and typesetting </a></li>
+                          <li><a href="#">Standard dummy text</a></li>
+                          <li><a href="#">Type specimen book</a></li>
+                      </ul>
+                  </div>
+              </div><!--- END COL --> 
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="single_footer single_footer_address">
+                      <h4>Page Link</h4>
+                      <ul>
+                          <li><a href="#">Lorem Ipsum</a></li>
+                          <li><a href="#">Simply dummy text</a></li>
+                          <li><a href="#">The printing and typesetting </a></li>
+                          <li><a href="#">Standard dummy text</a></li>
+                          <li><a href="#">Type specimen book</a></li>
+                      </ul>
+                  </div>
+              </div><!--- END COL -->
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="single_footer single_footer_address">
+                      <h4>Subscribe today</h4>
+                      <div class="signup_form">                           
+                          <form action="#" class="subscribe">
+                              <input type="email" class="form-control subscribe__input" placeholder="Enter Email Address">
+                              <button type="submit" class="btn btn-primary subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="social_profile">
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      </ul>
+                  </div>                          
+              </div><!--- END COL -->         
+          </div><!--- END ROW --> 
+          <div class="row">
+              <div class="col-lg-12">
+                  <p class="copyright">Copyright © 2024 <a href="#"></a>.</p>
+              </div><!--- END COL -->                 
+          </div><!--- END ROW -->                 
+      </div><!--- END CONTAINER -->
+  </footer>
+  
+  
+  
+
+
+    <script>
+      const navbar = document.getElementById("navbar");
+  const navbarToggle = navbar.querySelector(".navbar-toggle");
+  
+  function openMobileNavbar() {
+    navbar.classList.add("opened");
+    navbarToggle.setAttribute("aria-expanded", "true");
+  }
+  
+  function closeMobileNavbar() {
+    navbar.classList.remove("opened");
+    navbarToggle.setAttribute("aria-expanded", "false");
+  }
+  
+  navbarToggle.addEventListener("click", () => {
+    if (navbar.classList.contains("opened")) {
+      closeMobileNavbar();
+    } else {
+      openMobileNavbar();
+    }
+  });
+  
+  const navbarMenu = navbar.querySelector("#navbar-menu");
+  const navbarLinksContainer = navbar.querySelector(".navbar-links");
+  
+  navbarLinksContainer.addEventListener("click", (clickEvent) => {
+    clickEvent.stopPropagation();
+  });
+  
+  navbarMenu.addEventListener("click", closeMobileNavbar);
+  
+  document
+    .getElementById("options")
+    .querySelectorAll("input[name='navtype']")
+    .forEach((option) => {
+      option.addEventListener("change", (e) => {
+        const navType = e.target.id.split("-").join(" ");
+        navbarMenu.classList = navType;
+      });
+    });
+    </script>
+
+  </body>
+
+
+ 
+
+
+ 
+</html>
+
+
+
